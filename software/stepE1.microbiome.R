@@ -31,7 +31,7 @@ spec = matrix (c(
 opt = getopt(spec)
 
 if(is.null(opt$input))   {opt$input = "./taxonomy_table.txt"}
-if(is.null(opt$input))   {opt$output = "./microbiomeScript_summary"}
+if(is.null(opt$onput))   {opt$output = "./microbiomeScript_summary"}
 
 if(!file.exists(opt$input)) {message("taxonomy_table not provided or not exist!");q(status = 1)}
 if(dir.exists(opt$output)) {message("output folder exists! please delete before running the script");q(status = 1)}
